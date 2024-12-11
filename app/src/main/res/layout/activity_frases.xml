@@ -35,6 +35,7 @@
 
     <TextView
         android:id="@+id/ola"
+        style="@style/TextAppearance.AppCompat.Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Olá, <nome>"
@@ -48,6 +49,7 @@
     </TextView>
 
     <TextView
+        android:typeface="monospace"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/ola"
@@ -58,6 +60,9 @@
         android:textStyle="bold"
         android:gravity="center"
         android:drawableBottom="@drawable/line_below"
+        android:drawableTint="@color/fern_green"
+        android:drawablePadding="5dp"
+        android:layout_margin="10dp"
         >
     </TextView>
 
