@@ -7,4 +7,72 @@
     android:layout_height="match_parent"
     tools:context=".FrasesActivity">
 
+    <ImageView
+        android:id="@+id/dog"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:src="@drawable/dog_5_svgrepo_com"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/cat"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@color/hunter_green"
+        android:padding="5dp"
+        >
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/cat"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:src="@drawable/cat_svgrepo_com"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/dog"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@color/hunter_green"
+        android:padding="5dp"
+        >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/ola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Olá, <nome>"
+        app:layout_constraintTop_toBottomOf="@+id/cat"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        >
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/ola"
+        app:layout_constraintBottom_toTopOf="@id/button"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="A impressão de nariz de um cachorro é tão única quanto uma impressão digital humana"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:drawableBottom="@drawable/line_below"
+        >
+    </TextView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cat"
+        app:layout_constraintVertical_bias="0.95"
+        android:backgroundTint="@color/fern_green"
+        android:text="Gerar Outra frase"
+        android:paddingHorizontal="20dp"
+        >
+    </Button>
 </androidx.constraintlayout.widget.ConstraintLayout>
